@@ -138,3 +138,13 @@ CELERY_RESULT_BACKEND = 'django-db'
 
 # CELERY BEAT SETTINGS
 CELERY_BEAT_SCHEDULE = 'django_celery_beat.schedulers:DatabaseScheduler'
+
+# SMTP SETTINGS
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_LOCALTIME = True
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'mail.getlocalhost.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'temp@getlocalhost.com'
+EMAIL_HOST_PASSWORD = 'Z5S(oEf@C$=]'
